@@ -1,6 +1,3 @@
-import { Button } from "bootstrap";
-import { Navigate, useNavigate } from "react-router-dom";
-
 function CustomButton({ ButtonName, handleOnClick }) {
   handleOnClick = ({ Page }) => {
     console.log("sdsds");
@@ -8,10 +5,10 @@ function CustomButton({ ButtonName, handleOnClick }) {
   return (
     <>
       <button
-        onClick={handleOnClick}
-        className="px-4 py-2 z-20 font-bold text-white   rounded-3xl bg-violet-900 hover:bg-violet-800"
+        className=" text-black flex w-max object-cover px-4   rounded-full items-center font-base py-2 bg-white hover:bg-yellow-400
+      "
       >
-        {ButtonName}
+        <a href="#">{ButtonName}</a>
       </button>
     </>
   );

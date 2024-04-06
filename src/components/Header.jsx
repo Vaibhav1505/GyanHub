@@ -1,28 +1,39 @@
+import CustomButton from "./CustomButton";
+
 function HeaderSection() {
   return (
     <>
-      <div className="Navbar justify-between flex px-3 py-3  bg-violet-950 align-content-center sticky z-30 ">
-        <div className="navLogo mx-4 h-10 w-20">
-          <h1 className="font-extrabold text-3xl space-x-1 ">
-            <span className="text-white">Gyan</span>
-            <span className="text-black bg-yellow-300 px-2">Hub</span>
-          </h1>
+      <nav className="custom-nav font-semibold text-black mx-10">
+        <div className="flex justify-between my-4  items-center  ">
+          <div className="text-white font-bold text-xl">
+            <h1>
+              Gyan
+              <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 inline-block text-transparent bg-clip-text font-bold ">
+                Hub
+              </span>
+            </h1>
+          </div>
+          <div className="flex space-x-8 list-none items-center rounded-full bg-white px-5 py-2">
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Docs</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Team</a>
+            </li>
+          </div>
+          <CustomButton
+            ButtonName="Get Started"
+            handleOnClick={console.log("hello")}
+
+          ></CustomButton>
         </div>
-        <div className="nav-items space-x-12 text-white">
-          <a className="text-xl " href="#">
-            Home
-          </a>
-          <a className="text-xl " href="#">
-            About
-          </a>
-          <a className="text-xl" href="#">
-            Offering
-          </a>
-        </div>
-        <button className="px-4 py-1 bg-white rounded-3xl font-extrabold hover:bg-gray-200 !important">
-          Get Started
-        </button>
-      </div>
+      </nav>
     </>
   );
 }

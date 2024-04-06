@@ -1,18 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import HeaderSection from "./components/Header";
-import ArticleSection from "./components/article";
-import CustomButton from "./components/CustomButton";
-import AboutUs from "./components/About";
-import OfferCard from "./components/OfferCard";
-import Offering from "./components/Offering";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
     <>
-      <HeaderSection></HeaderSection>
-      <ArticleSection></ArticleSection>
-      <Offering></Offering>
+      <div className="bg-gray-300 ">
+        <LandingPage></LandingPage>
+      </div>
     </>
   );
 }

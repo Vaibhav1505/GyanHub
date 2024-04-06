@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "PoppinsBold"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./src/fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaBold"; /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./src/fonts/proximaNova/Mark Simonson  Proxima Nova Semibold.otf")
+      format("truetype");
+}

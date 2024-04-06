@@ -1,15 +1,25 @@
-function OfferCard({ CardTitle, CardDescription }) {
+import React from "react";
+import CustomButton from "./CustomButton";
+
+const OfferCard = ({ title, description, image }) => {
   return (
-    <>
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title font-bold">{CardTitle}</h5>
-          <p className="card-text">{CardDescription}</p>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARRJREFUSEvtltsVwiAMhpNNdBPdxE6iTqKb2E3sJrHxACdH7oTKg/LWU8iXy08IwqCFg7iQBRPRDgBOSgcXRLxLGyXgJwAwXLsYvrdGkmAi4khvWqI4f0XEC3/nwLzp/AevYltMFmprr071DACTUXtNKfRgRDxy1OK6lTjgg4nICQlX6RmjMXHNFmyFZxzgG3BIiLE/WDjAV5CjD9V/O7BI/yMA3w6caTr9wV+v8RBVy5tQ2FbVqebOVdu12Dc1uDBAb9vvgSc7ibj3ONIyuY6hRtCS6vAEEgKLLsT9t0VMzkE7eXijTwzcElrJmWSqSwy07gmCW429hzjzpOZsSHAXIVWDewnpU0SxyLMDfS5lrf+HgV/VTNwfKeoUogAAAABJRU5ErkJggg==" />
+    <div className="relative flex-col justify-between bg-gray-600 w-1/4 rounded-lg overflow-hidden shadow-md  border-none p-3 transform transition duration-300 hover:-translate-y-2 hover:shadow-yellow-400 hover-border-3 drop-shadow-2xl shadow-gray-400">
+      <img
+        className="w-8 mt-3 ml-1   border-white border-1 rounded-full"
+        src={image}
+        alt=""
+      />
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent  to-black opacity-50"></div>
+     
+      <div className="relative z-10">
+        <h1 className="text-xl text-white font-bold my-3">{title}</h1>
+        <p className="text-gray-300 mb-4">{description}</p>
+        <div className="font-semi  ">
+          <CustomButton ButtonName="Explore"></CustomButton>
         </div>
       </div>
-    </>
+    </div>
   );
-}
+};
 
 export default OfferCard;
