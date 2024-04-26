@@ -1,7 +1,7 @@
 import OfferCard from "./OfferCard";
 import CustomButton from "./CustomButton";
 import videoImg from "../assets/images/yttt.webp";
-import pdfImg from "../assets/images/pdff.webp";
+import pdfImg from "../assets/images/August-blog-header-Amplification.png";
 import roadmapImg from "../assets/images/rdmp.png";
 import backgroundImage from "../assets/images/offer-bg.avif";
 import "../App.css";
@@ -25,8 +25,8 @@ function Offering() {
             image={videoImg}
           ></OfferCard>
           <OfferCard
-            title="PDF suggestions"
-            description="Seamlessly add suggestions to PDF documents: With just a few clicks, you can effortlessly annotate and provide suggestions directly on your PDF files."
+            title="Content suggestions"
+            description="Seamlessly add content suggestions: With just a few clicks, you can effortlessly annotate and provide suggestions directly on your PDF files."
             image={pdfImg}
           ></OfferCard>
           <OfferCard
