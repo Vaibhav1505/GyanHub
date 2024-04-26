@@ -4,6 +4,7 @@ import AboutUs from "./About";
 import HeaderSection from "./Header";
 import MainSlogan from "./MainSlogan";
 import Offering from "./Offering";
+import Footer from "./footer";
 import  "../App.css";
 
 function LandingPage() {
@@ -18,9 +19,9 @@ function LandingPage() {
         <HeaderSection />
         <MainSlogan />
       </div>
-
       <Offering />
       <AboutUs />
+      {/* <Footer></Footer> */}
     </>
   );
 }
