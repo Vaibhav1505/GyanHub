@@ -4,39 +4,39 @@ import videoImg from "../assets/images/yttt.webp";
 import pdfImg from "../assets/images/August-blog-header-Amplification.png";
 import roadmapImg from "../assets/images/rdmp.png";
 import backgroundImage from "../assets/images/offer-bg.avif";
+import featureImage from "../assets/images/features.png";
 import "../App.css";
 
 function Offering() {
   return (
     <>
       <div
-        className="  space-x-5  justify-evenly    mx-auto  bg-black     relative  items-center  h-screen bg-cover bg-center  space-y-10"
-        
+        className=" space-x-5   h-screen     bg-black  relative   bg-cover bg-center  space-y-12"
+
         // style={{
         //   backgroundImage: `url(${backgroundImage})`,
         // }}
-        
       >
-        <h1 className="text-5xl text-center font-bold text-white " >Features</h1>
-        <div className="flex flex-row justify-evenly">
-          <OfferCard
-            title="Video recommendation"
-            description="GyanHub video recommendations help you find more of the videos that you love."
-            image={videoImg}
-          ></OfferCard>
-          <OfferCard
-            title="Content suggestions"
-            description="Seamlessly add content suggestions: With just a few clicks, you can effortlessly annotate and provide suggestions directly on your PDF files."
-            image={pdfImg}
-          ></OfferCard>
-          <OfferCard
-            title="Roadmaps"
-            description="GyanHub shows you the Roadmap which helps you to find the effective way to complete your task"
-            image={roadmapImg}
-          ></OfferCard>
-          {/* <button className="font-bold">
-            <CustomButton ButtonName='click me'></CustomButton>
-          </button> */}
+        <h1 className="text-5xl text-center pt-4 font-bold text-white ">Features</h1>
+        <div className="flex items-center justify-evenly">
+          <img src={featureImage} alt="" />
+          <div className="flex flex-col space-y-4 justify-evenly">
+            <OfferCard
+              title="Video recommendation"
+              description="GyanHub video recommendations help you find more of the videos that you love."
+              image={videoImg}
+            ></OfferCard>
+            <OfferCard
+              title="Content suggestions"
+              description="Seamlessly add content suggestions: With just a few clicks, you can effortlessly annotate and provide suggestions directly on your PDF files."
+              image={pdfImg}
+            ></OfferCard>
+            <OfferCard
+              title="Roadmaps"
+              description="GyanHub shows you the Roadmap which helps you to find the effective way to complete your task"
+              image={roadmapImg}
+            ></OfferCard>
+          </div>
         </div>
       </div>
       {/* <BentoCardItem title="hellocard" description="What is Lorem Ipsum?

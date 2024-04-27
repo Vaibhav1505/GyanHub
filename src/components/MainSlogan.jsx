@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CustomButton from "./CustomButton";
+import GetStarted from "./GetStarted";
 import React from "react";
 
 function MainSlogan() {
@@ -13,11 +14,12 @@ function MainSlogan() {
             </span>
             Your AI based Learning Platform
           </h1>
-          <p className="text-lg text-gray-300 mt-7 ">
+          <p className="text-2xl text-gray-300 mt-7 ">
             Empowering Education Through AI: Transformative Learning, Unmatched
             Insights.
           </p>
           <div className="flex space-x-3 my-6 ">
+            
             <Link to="/getStarted">
               <CustomButton ButtonName="Get Started"></CustomButton>
             </Link>

@@ -19,8 +19,8 @@ function LandingPage() {
         <HeaderSection />
         <MainSlogan />
       </div>
-      <Offering />
-      <AboutUs />
+      {/* <Offering /> */}
+      {/* <AboutUs /> */}
       {/* <Footer></Footer> */}
     </>
   );
